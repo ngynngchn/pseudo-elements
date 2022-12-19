@@ -1,0 +1,41 @@
+/* Benutze diese Farben: #a020f0, #00bfff, #32cd32, #c71585, #00ced1, #483d8b, #2e8b57
+Benutze diese Befehle: ::first-line, ::first-letter, ::before, ::after, ::selection
+ */
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+  font-family: Montserrat;
+}
+
+p::first-letter {
+  color: #00ced1;
+  font-size: 30px;
+}
+
+p::first-line {
+  color: #483d8b;
+}
+
+h1::before {
+  content: "Hi!";
+  color: #32cd32;
+}
+
+h1,
+h2,
+h3 {
+  color: #2e8b57;
+}
+
+h2::after {
+  content: "!";
+  color: #c71585;
+}
+
+h3::selection {
+  background-color: #a020f0;
+  color: #c71585;
+}
